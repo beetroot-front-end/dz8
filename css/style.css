@@ -1,20 +1,20 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Signika:300,400,700');
+body {
+	background-color:#f7f7f7;
 }
 .main {
 	min-height: 650px;
-	background-image: url('../images/Background.jpg');
+	background-image: url('../img/Background.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
-.main-header {
+.main-nav {
 	width: 59.2%;
 	margin: 0 auto;
 	line-height: 100px;
-	padding: 25px 0;
+	padding: 36px 0;
 }
 .main-logo {
 	float: left;
@@ -39,15 +39,84 @@
 }
 .navigation li:not(:last-child):after {
 	content: '/';
-	color: #eee;
+	color: #26323d;
+	font-size: 18px;
 	position: absolute;
 	right: 0;
 }
 .navigation li a {
 	text-decoration: none;
-	font-family: Lato;
+	font-family: 'Lato', sans-serif;
 	color: #ffffff;
-	font-size: 16px; /* Approximation due to font substitution */
+	font-size: 16px;
 	font-weight: 700;
 	text-align: center;
+}
+.main-header {
+	margin-top: 10%;
+}
+.main-header h1 {
+	font-family: 'Signika', sans-serif;
+	text-transform: uppercase;
+	color:  #ffffff;
+	font-size: 46px;
+	font-weight: 400;
+	line-height: 1;
+}
+.main-header h2 {
+	font-family: 'Signika', sans-serif;
+	text-transform: uppercase;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 1;
+}
+.header-btn {
+	font-family: Lato;
+	color: #48bf72;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.4; 
+	text-transform: uppercase;
+	text-align: center;
+	border: 2px solid #48bf72;
+	border-radius: 3px;
+	background-color: transparent;
+	margin: 50px auto;
+	padding: 10px 15px;
+}
+.portfolio {
+	width: 59.2%;
+	margin: 0 auto;
+}
+.portfolio-nav li{
+	list-style: none;
+	display: inline-block;
+	border-radius: 2px;
+	background-color:  #eaeaea;
+	padding: 9px 13px;
+	margin: 4px;
+}
+.portfolio-nav li:hover {
+	background-color:#48bf72;
+}
+.portfolio-nav a {
+	font-family: Lato;
+	color: #3c4955;
+	font-size: 16px;
+	line-height: 2;
+	font-weight: 700;
+	text-decoration: none;
+}
+.portfolio-nav a:hover {
+	color: #fff;
+}
+.float-left {
+	float: left;
+	width: 30%;
+	height: 100%;
+}
+.float-right {
+	float: right;
+	width: 68%;
 }
