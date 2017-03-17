@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Signika:300,400,700');
 body {
 	background-color:#f7f7f7;
+	font-family: 'Lato', sans-serif;
 }
 .main {
 	min-height: 650px;
@@ -46,7 +47,6 @@ body {
 }
 .navigation li a {
 	text-decoration: none;
-	font-family: 'Lato', sans-serif;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 700;
@@ -72,7 +72,6 @@ body {
 	line-height: 1;
 }
 .header-btn {
-	font-family: Lato;
 	color: #48bf72;
 	font-size: 14px;
 	font-weight: 700;
@@ -85,7 +84,7 @@ body {
 	margin: 50px auto;
 	padding: 10px 15px;
 }
-.portfolio {
+.portfolio, .contact {
 	width: 59.2%;
 	margin: 0 auto;
 }
@@ -101,7 +100,6 @@ body {
 	background-color:#48bf72;
 }
 .portfolio-nav a {
-	font-family: Lato;
 	color: #3c4955;
 	font-size: 16px;
 	line-height: 2;
@@ -111,12 +109,127 @@ body {
 .portfolio-nav a:hover {
 	color: #fff;
 }
-.float-left {
-	float: left;
-	width: 30%;
-	height: 100%;
+
+.left-block  img, .right-block img {
+	width: 90%;
+	margin-top: 40px;
 }
-.float-right {
+.left-block {
+	width: 40%;
+	float: left;
+}
+.right-block {
+	width: 60%;
 	float: right;
-	width: 68%;
+}
+.about {
+	background: url('../img/contact-background.jpg') no-repeat center center;
+	height: 500px;
+	padding-top: 91px;
+}
+.about-me {
+	width: 416px;
+	margin-left: 50%;
+}
+.about-me h3 {
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0;
+}
+.about-me h4 {
+	color:  #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 2;
+	margin: 0;
+}
+.about-me p {
+	color: #ffffff;
+	font-size: 16px; 
+	font-weight: 400;
+	line-height: 1.4; 
+	margin-bottom: 40px;
+}
+.about-me button {
+	color:  #3c4955;
+	text-transform: uppercase;
+	padding: 15px 23px;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	background: transparent;
+}
+.contact h3 {
+	font-family: 'Signika', sans-serif;
+	color: #48bf72;
+	font-size: 26px; 
+	font-weight: 400;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.contact input {
+	border-radius: 3px;
+	border-width: 2px;
+	border-color:  #3c4955;
+	border-style: solid;
+	background-color:  #f1f1f1;
+	
+}
+.contact input[type='text'] {
+	width: 335px;
+	height: 48px;
+	margin-bottom: 20px;
+}
+.name {
+	margin-right: 22px;
+	background: url(../img/icon-user.png) no-repeat left center;
+}
+.email {
+	background: url(../img/icon-email.png) no-repeat left center;
+}
+.contact input[type='textfield'] {
+	width: 696px;
+	height: 224px;
+	margin: 0 auto;
+	background: url(../img/icon-message.png) no-repeat left center;
+}
+.contact button {
+	border-radius: 3px;
+	background-color:  #48bf72;
+	width: 701px;
+	height: 50px;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2;
+	margin: 30px 0;
+}
+footer {
+	background-color:  #3c4955;
+	padding: 73px 20%;
+}
+.copyright {
+	float: left;
+}
+.copyright p {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.copyright a {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+}
+.social {
+	float: right;
+}
+.social a {
+	margin-left: 40px;
 }
